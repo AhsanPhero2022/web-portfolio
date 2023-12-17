@@ -12,6 +12,9 @@ import npm from '../../assets/icons/npm.png'
 import firebase from '../../assets/icons/firebase.png'
 import github from '../../assets/icons/github.png'
 import vscode from '../../assets/icons/vscode.png'
+import typeScript from '../../assets/icons/ts.png'
+import nextjs from '../../assets/icons/next.jpg'
+import netlify from '../../assets/icons/netlify.png'
 
 const Skills = () => {
     return (
@@ -34,11 +37,20 @@ const Skills = () => {
                         <h4>JavaScript</h4>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" className='skill-card'>
+                        <img src={typeScript} alt="" />
+                        <h4>TypeScript</h4>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" className='skill-card'>
                         <img src={react} alt="" />
                         <h4>React</h4>
                     </div>
+                    
                 </div>
                 <div className='flex justify-between gap-8'>
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" className='skill-card'>
+                        <img src={nextjs} alt="" />
+                        <h4>Next.js</h4>
+                    </div>
                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" className='skill-card'>
                         <img src={bootstrap} alt="" />
                         <h4>Bootstrap</h4>
@@ -51,13 +63,14 @@ const Skills = () => {
                         <img src={node} alt="" />
                         <h4>Node JS</h4>
                     </div>
+                    
                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="650" data-aos-once="true" className='skill-card'>
                         <img src={express} alt="" />
                         <h4>Express JS</h4>
                     </div>
                 </div>
 
-                <div className='flex justify-center gap-8'>
+                <div className='flex items-center justify-center gap-8'>
                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true" className='skill-card'>
                         <img src={mongodb} alt="" />
                         <h4>MongoDB</h4>
@@ -65,6 +78,10 @@ const Skills = () => {
                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="350" data-aos-once="true" className='skill-card'>
                         <img src={firebase} alt="" />
                         <h4>Firebase</h4>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="350" data-aos-once="true" className='skill-card'>
+                        <img src={netlify} alt="" />
+                        <h4>Netlify</h4>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-once="true" className='skill-card'>
                         <img src={npm} alt="" />
