@@ -1,0 +1,46 @@
+/* google font links */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #35aac7;
+  border-radius: 10px;
+}
+
+.default {
+  @apply font-medium md:mx-5 py-2 block text-gray-100 hover:text-[#35aac7] transition cursor-pointer poppins-font;
+}
+
+.active {
+  @apply font-medium md:mx-5 py-2 block text-[#35aac7] cursor-pointer;
+}
+
+.poppins-font{
+  font-family: 'Poppins', sans-serif;
+}
+
+.lato-font{
+  font-family: 'Lato', sans-serif;
+}
