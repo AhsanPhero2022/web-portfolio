@@ -16,12 +16,12 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_dyh98oc",
+        "service_yudhhlw",
         
         "template_0mkxu8e",
         
         form.current,
-        "k8QpfSMEYotKVDtjU"
+        "FZsJVM-r_uFR6p3jF"
       )
       .then(
         // eslint-disable-next-line no-unused-vars

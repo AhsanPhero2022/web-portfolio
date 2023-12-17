@@ -12,6 +12,7 @@ const DetailsModal = ({ id, setOpenModal }) => {
         setProject(project);
         // console.log(project)
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
