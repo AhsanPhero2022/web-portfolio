@@ -44,3 +44,8 @@ body.modal-open {
 .lato-font{
   font-family: 'Lato', sans-serif;
 }
+
+.rotated-element {
+  transform: rotate(-10deg);
+  margin: 10px; 
+}

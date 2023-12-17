@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from 'react-scroll';
-import resume from '../../assets/rana-ahmed-resume.pdf'
+import resume from '../../assets/resume.pdf'
 
 const NavItems = ({activeSection, setOpen}) => {
     return (
