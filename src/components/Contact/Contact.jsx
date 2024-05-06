@@ -1,46 +1,59 @@
-import { useRef, useState } from "react";
-import { useForm } from "react-hook-form";
 import { FaSpinner, FaTelegramPlane, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
-import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
+// import emailjs from "@emailjs/browser";
+// import Swal from "sweetalert2";
+
+import emailjs from "@emailjs/nodejs";
+import {  useState } from "react";
+
+
+
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
-  const { register, handleSubmit, reset } = useForm();
-  const form = useRef();
+
+
+
+
   // eslint-disable-next-line no-unused-vars
-  const onSubmit = (data) => {
-    setLoading(true);
-    // console.log(data)
+  const sendEmail = (e) => {
+    e.preventDefault();
+setLoading(true)
+
+ 
+setTimeout(() => {
+  alert("Form submitted successfully!");
+  setLoading(false);
+}, 3000);
+    
+
+    const templateParams = {
+      name: "James",
+      notes: "Check this out!",
+    };
+
+    emailjs.init({
+      publicKey: "1ocR-o4GzhujkNcSp",
+      privateKey: "DehqbXM6I_SJDDgtRHAg7", // optional, highly recommended for security reasons
+    });
 
     emailjs
-      .sendForm(
-        "service_yudhhlw",
-        
-        "template_0mkxu8e",
-        
-        form.current,
-        "FZsJVM-r_uFR6p3jF"
-      )
+      .send("service_gl15gqb", "template_n6x8d2p", templateParams, {})
       .then(
-        // eslint-disable-next-line no-unused-vars
-        (result) => {
-          reset();
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
           setLoading(false);
-          Swal.fire(
-            "Message sent!",
-            "I will contact you soon. Thanks for your message😊",
-            "success"
-          );
         },
-        // eslint-disable-next-line no-unused-vars
-        (error) => {
-          // console.log(error.text);
+        (err) => {
+          console.log("FAILED...", err);
         }
       );
   };
 
+
+
+
+  
   return (
     <section id="contact" className="pt-10 pb-20">
       <hr className="animate-bounce h-2 w-[80px] mx-auto mb-3 border-0 rounded-full bg-[#35aac7]" />
@@ -57,7 +70,7 @@ const Contact = () => {
           className="rounded-lg w-full md:w-1/2"
         >
           <div className="flex flex-col">
-            <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={sendEmail}>
               <div className="grid gap-4 lg:gap-6">
                 <div className="grid">
                   <div>
@@ -69,15 +82,13 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      {...register("name")}
-                      name="name"
+                      name="user_name"
                       id="name"
                       className="py-3 px-4 block w-full rounded-md text-sm focus:ring-[#FEBC1E] focus:border-0 bg-[#252947] text-gray-300"
                       required
                     />
                   </div>
                 </div>
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
                     <label
@@ -88,8 +99,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
-                      {...register("email")}
-                      name="email"
+                      name="user_email"
                       id="email"
                       className="py-3 px-4 block w-full rounded-md text-sm focus:ring-[#FEBC1E] focus:border-0 bg-[#252947] text-gray-300"
                       required
@@ -105,8 +115,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      {...register("phone")}
-                      name="phone"
+                      name="user_phone"
                       id="phone"
                       className="py-3 px-4 block w-full rounded-md text-sm focus:ring-[#FEBC1E] focus:border-0 bg-[#252947] text-gray-300"
                     />
@@ -122,8 +131,7 @@ const Contact = () => {
                   </label>
                   <textarea
                     id="message"
-                    {...register("message")}
-                    name="message"
+                    name="user_message"
                     rows="4"
                     className="py-3 px-4 block w-full rounded-md text-sm focus:ring-[#FEBC1E] focus:border-transparent bg-[#252947] text-gray-300"
                     required
