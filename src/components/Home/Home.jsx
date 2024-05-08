@@ -7,6 +7,7 @@ import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import { useEffect, useState } from "react";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
+import Blogs from "./Blogs";
 
 const Home = () => {
     const [activeSection, setActiveSection] = useState('home');
@@ -43,6 +44,7 @@ const Home = () => {
                 <About />
                 <Skills />
                 <Projects />
+                <Blogs/>
                 <Contact />
             </div>
             <Footer />
