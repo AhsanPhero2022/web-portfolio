@@ -96,8 +96,7 @@ const Hero = () => {
           <img
             src={profileImg}
             alt=""
-            width={380}
-            className="rotated-element bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 rounded-full ml-auto ring-2 ring-[#2E6F9B] "
+            className="  bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 rounded-full ring-2 ring-[#2E6F9B] ml-auto"
           />
         </div>
       </div>

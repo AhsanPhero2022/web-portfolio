@@ -1,31 +1,22 @@
 import { FaSpinner, FaTelegramPlane, FaEnvelope } from "react-icons/fa";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 // import Swal from "sweetalert2";
 
-import emailjs from "@emailjs/nodejs";
-import {  useState } from "react";
-
-
-
+import { useState } from "react";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
 
-
-
-
   // eslint-disable-next-line no-unused-vars
   const sendEmail = (e) => {
     e.preventDefault();
-setLoading(true)
+    setLoading(true);
 
- 
-setTimeout(() => {
-  alert("Form submitted successfully!");
-  setLoading(false);
-}, 3000);
-    
+    setTimeout(() => {
+      alert("Form submitted successfully!");
+      setLoading(false);
+    }, 3000);
 
     const templateParams = {
       name: "James",
@@ -50,10 +41,6 @@ setTimeout(() => {
       );
   };
 
-
-
-
-  
   return (
     <section id="contact" className="pt-10 pb-20">
       <hr className="animate-bounce h-2 w-[80px] mx-auto mb-3 border-0 rounded-full bg-[#35aac7]" />
