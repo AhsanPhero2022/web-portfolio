@@ -21,7 +21,7 @@ const Hero = () => {
           data-aos-once="true"
         >
           <p className="text-2xl md:text-3xl mb-3 font-bold text-[#35aac7]">
-            HEY!
+            HI,
           </p>
           <h2 className="text-4xl md:text-[50px] mb-4 md:mb-5 poppins-font font-bold text-gray-100">
             I&apos;m Sharif Ahmad
