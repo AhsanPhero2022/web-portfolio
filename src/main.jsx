@@ -9,6 +9,7 @@ import Dashboard from "./components/Dashboard/UserDashboard.jsx";
 
 import AddSkill from "./components/Dashboard/AddSkill.jsx";
 import AddProject from "./components/Dashboard/AddProject.jsx";
+import DashboardHome from "./components/Dashboard/DashboardHome.jsx";
 
 AOS.init();
 
@@ -22,7 +23,10 @@ const router = createBrowserRouter([
     element: <Dashboard />,
     children: [
       {
-        index: true,
+        path: "/dashboard",
+        element: <DashboardHome />,
+      },
+      {
         path: "addSkill",
         element: <AddSkill />,
       },

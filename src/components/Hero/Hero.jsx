@@ -45,6 +45,7 @@ const Hero = () => {
             exceptional websites using the powerful MERN stack. Explore my
             portfolio and witness the magic of my creations!
           </p>
+
           <div>
             <ScrollLink to="projects" smooth={true} duration={500} offset={-80}>
               <button
@@ -72,7 +73,10 @@ const Hero = () => {
                 data-aos-offset="50"
                 className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-[#35aac7] transition duration-300 ease-out border-2 border-[#35aac7] hover:border-transparent rounded-lg group"
               >
-                <span className="absolute inset-0 flex gap-2 items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-gradient-to-br from-[#35aac7] to-[#3669ac] group group-hover:translate-x-0 ease">
+                <span
+                  className="absolute inset-0 flex gap-2 
+                items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-gradient-to-br from-[#35aac7] to-[#3669ac] group group-hover:translate-x-0 ease"
+                >
                   <span>Hire Me</span>
                   <FaArrowRight />
                 </span>

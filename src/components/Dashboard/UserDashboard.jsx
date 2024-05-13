@@ -13,7 +13,7 @@ const UserDashboard = () => {
 
           <label
             htmlFor="my-drawer-2"
-            className="btn btn-primary drawer-button lg:hidden"
+            className="btn btn-success drawer-button lg:hidden"
           >
             Open drawer
           </label>
@@ -30,11 +30,12 @@ const UserDashboard = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/dashboard/addProject">Add Projects</Link>
-            </li>
-            <li>
               <Link to="/dashboard/addSkill">Add Skills</Link>
             </li>
+            <li>
+              <Link to="/dashboard/addProject">Add Projects</Link>
+            </li>
+
             <li>
               <Link to="/dashboard/addProject">Add Experience</Link>
             </li>
