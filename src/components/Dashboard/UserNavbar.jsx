@@ -42,21 +42,30 @@ const UserNavbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Soriful Ismam&rsquo;s Portfolio</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
-          </li>
-
-          <li>
-            <a>Item 3</a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://dev.to/ahsanphero2022/git-rebase-vs-git-merge-a-comprehensive-guide-33og"
+            >
+              Read Blogs
+            </a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/AhsanPhero2022"
+          className="btn"
+        >
+          Go to Github
+        </a>
       </div>
     </div>
   );
