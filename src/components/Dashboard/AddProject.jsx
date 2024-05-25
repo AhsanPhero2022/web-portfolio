@@ -78,7 +78,7 @@ const AddProject = () => {
               <li>
                 <input
                   className="h-8 rounded-md w-full px-3"
-                  placeholder="features4"
+                  placeholder="features-4"
                   {...register("features4")}
                 />
               </li>

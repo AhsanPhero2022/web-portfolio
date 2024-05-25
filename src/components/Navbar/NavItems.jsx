@@ -61,9 +61,11 @@ const NavItems = ({ activeSection, setOpen }) => {
         </ScrollLink>
       </li>
 
-      <Link to="/dashboard" className="">
-        Dashboard
-      </Link>
+      <li>
+        <Link to="/dashboard" className=" text-white">
+          Dashboard
+        </Link>
+      </li>
       <li>
         <a
           download

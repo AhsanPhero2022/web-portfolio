@@ -46,6 +46,7 @@ const Home = () => {
     >
       <Navbar activeSection={activeSection} />
       <Hero />
+
       <div className="max-w-7xl px-4 md:px-10 mx-auto">
         <About />
         <Skills />
