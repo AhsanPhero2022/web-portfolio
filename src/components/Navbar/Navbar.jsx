@@ -51,7 +51,7 @@ const Navbar = ({ activeSection }) => {
             to="/"
             className="poppins-font text-2xl md:text-3xl font-bold text-white"
           >
-            SHARIF AHMAD
+            Personal Portfolio
           </Link>
         </div>
 

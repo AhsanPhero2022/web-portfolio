@@ -24,7 +24,7 @@ const Hero = () => {
             HI,
           </p>
           <h2 className="text-4xl md:text-[50px] mb-4 md:mb-5 poppins-font font-bold text-gray-100">
-            I&apos;m Sharif Ahmad
+            I&apos;m Soriful Ismam
           </h2>
           <TypeAnimation
             className="text-xl md:text-3xl poppins-font font-medium text-gray-100"
